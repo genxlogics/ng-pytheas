@@ -2,6 +2,9 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
 
+A single page angular app that connects to the backend application and renders the shortest path to a planet.
+currently app shows the rendered route (using mat buttons and arrows) and total distance to it.
+use check box to include traffic data.
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
