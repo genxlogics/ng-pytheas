@@ -19,6 +19,7 @@ export class AppComponent implements OnInit {
   title = 'exoplanet-explorer';
   withTraffic = false;
   available = false;
+  inOneour = 2.854;
   planets: PlanetModel[] = [];
   routes: RouteModel[] = [];
   @Output() routeAvailable = new EventEmitter<string>();
@@ -43,5 +44,10 @@ export class AppComponent implements OnInit {
     console.log(this.routes);
     console.log('total distance =', this.routes.find(x => x.planetCode === this.selected ).distanceFromEarth);
     return this.routes.find(x => x.planetCode === this.selected ).distanceFromEarth;
+  }
+  calculateJourneyTime(distance: number): number {
+    const tTime = distance / this.inOneour;
+    console.log('Journey time : ', tTime);
+    return tTime;
   }
 }
