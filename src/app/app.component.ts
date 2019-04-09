@@ -35,7 +35,7 @@ export class AppComponent implements OnInit {
     this.routeSrv.discoverRouteTo(this.selected, this.withTraffic)
       .subscribe((resp => {
         this.routes = resp.body as RouteModel[];
-        this.available = true;})
+        this.available = true; })
         , error => console.log('Oops..', error));
   }
   getTotalDistance(): any {
@@ -44,5 +44,4 @@ export class AppComponent implements OnInit {
     console.log('total distance =', this.routes.find(x => x.planetCode === this.selected ).distanceFromEarth);
     return this.routes.find(x => x.planetCode === this.selected ).distanceFromEarth;
   }
-
 }

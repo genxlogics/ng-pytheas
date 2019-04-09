@@ -20,7 +20,7 @@
   <div *ngIf="available" class="example-full-width">
     <div></div>
     <div fxLayout="row" class="example-full-width" >
-      <h2 class="example-container"><span class="example-full-width"><button mat-fab color="accent">Earth</button></span><span *ngFor="let route of routes"> -------> <button mat-fab color="primary">{{route.planetName}}</button></span></h2>
+      <h2 class="example-container"><span class="example-full-width"><button mat-fab color="accent">Earth</button></span><span *ngFor="let route of routes"> -------> <button mat-fab color="primary" >{{route.planetName}}</button></span></h2>
 
     </div>
     <h3>Total Distance : {{routes[routes.length-1].distanceFromEarth}}</h3>
