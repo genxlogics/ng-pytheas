@@ -3,7 +3,7 @@ import {HttpClient} from '@angular/common/http';
 import {Observable} from 'rxjs';
 import {PlanetModel} from './planet.model';
 
-const planetService = 'http://localhost:8080/pytheas/planets';
+const planetService = 'http://localhost:5000/pytheas/planets';
 
 @Injectable({
   providedIn: 'root'

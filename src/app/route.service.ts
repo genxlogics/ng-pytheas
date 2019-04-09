@@ -4,7 +4,7 @@ import {RouteModel} from './route.model';
 import {catchError, retry, tap} from 'rxjs/operators';
 import {Observable, throwError} from 'rxjs';
 
-const routeService = 'http://localhost:8080/pytheas/discover';
+const routeService = 'http://localhost:5000/pytheas/discover';
 
 @Injectable({
   providedIn: 'root'
